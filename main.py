@@ -1,11 +1,12 @@
 import streamlit as st
 import requests
-from configparser import ConfigParser
+import os
+# from configparser import ConfigParser
 
-config_object = ConfigParser()
-config_object.read("config.ini")
+# config_object = ConfigParser()
+# config_object.read("config.ini")
 
-URL = config_object["BACKEND"]["URL"]
+URL = os.environ.get("URL")
 
 def main():
     st.title("Curious Medicine")
