@@ -12,7 +12,9 @@ def main():
     st.title("Curious Medicine")
     st.header("Ask a question about your medicines")
     st.subheader("How to use ?")
-    st.write("You can ask questions like 'How does Adderall work ?' or 'What medicines should I consume for headaches ?'")
+    st.write("You can ask questions like 'How does cough syrup work ?' or 'What medicines should I consume for headaches ?'")
+    st.subheader("Prompt Guidebook")
+    st.write("If you want simple explanations, you can ask something like 'Explain how painkillers work like I am a 10 year old kid' or 'Give me detailed explaination on when should I consume antacids ?'")
     st.divider()
     try:
         query = st.text_input("Enter your query: ")
